@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Notes</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fontawesome icon link for for settings -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="popup">
+        <div class="content">
+            <header>
+                <p>Add a new note</p>
+                <i class="fa-solid fa-xmark closepopup"></i>
+            </header>
+            <form>
+                <div class="row title">
+                    <label>Title</label>
+                    <input type="text" required>
+                </div>
+                <div class="row description">
+                    <label>Description</label>
+                    <textarea></textarea>
+                </div>
+                <button class="add">Add Note</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <li id="add-box">
+            <div class="addnote">
+                <i class="fa-regular fa-plus"></i>
+            </div>
+            <p>Add Note</p>
+        </li>
+        <!-- <li class="note">
+            <div class="content">
+                <p class="title">
+                    Your Title
+                </p>
+                <span class="details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis ducimus, deserunt odit
+                </span>
+            </div>
+            <div class="bottom">
+                <span class="date">
+                    9 oct 2023
+                </span>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis">    
+                    </i>
+                    <ul class="menu">
+                        <li class="edit-icons edit"><i class="fa-solid fa-pen"></i>Edit</li>
+                        <li class="edit-icons delete"><i class="fa-solid fa-trash"></i>Delete</li>
+                    </ul>
+                </div>
+            </div>
+        </li> -->
+        <!-- <li class="note">
+            <div class="content">
+                <p class="title">
+                    Your Title
+                </p>
+                <span class="details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis ducimus, deserunt odit
+                </span>
+            </div>
+            <div class="bottom">
+                <span class="date">
+                    9 oct 2023
+                </span>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+        </li>
+        <li class="note">
+            <div class="content">
+                <p class="title">
+                    Your Title
+                </p>
+                <span class="details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis ducimus, deserunt odit
+                </span>
+            </div>
+            <div class="bottom">
+                <span class="date">
+                    9 oct 2023
+                </span>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+        </li>
+        <li class="note">
+            <div class="content">
+                <p class="title">
+                    Your Title
+                </p>
+                <span class="details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis ducimus, deserunt odit
+                </span>
+            </div>
+            <div class="bottom">
+                <span class="date">
+                    9 oct 2023
+                </span>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+        </li>
+        <li class="note">
+            <div class="content">
+                <p class="title">
+                    Your Title
+                </p>
+                <span class="details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis ducimus, deserunt odit
+                </span>
+            </div>
+            <div class="bottom">
+                <span class="date">
+                    9 oct 2023
+                </span>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+        </li>
+        <li class="note">
+            <div class="content">
+                <p class="title">
+                    Your Title
+                </p>
+                <span class="details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis ducimus, deserunt odit
+                </span>
+            </div>
+            <div class="bottom">
+                <span class="date">
+                    9 oct 2023
+                </span>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+        </li>
+        <li class="note">
+            <div class="content">
+                <p class="title">
+                    Your Title
+                </p>
+                <span class="details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis ducimus, deserunt odit
+                </span>
+            </div>
+            <div class="bottom">
+                <span class="date">
+                    9 oct 2023
+                </span>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+        </li>
+        <li class="note">
+            <div class="content">
+                <p class="title">
+                    Your Title
+                </p>
+                <span class="details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis ducimus, deserunt odit
+                </span>
+            </div>
+            <div class="bottom">
+                <span class="date">
+                    9 oct 2023
+                </span>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+        </li>
+        <li class="note">
+            <div class="content">
+                <p class="title">
+                    Your Title
+                </p>
+                <span class="details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis ducimus, deserunt odit
+                </span>
+            </div>
+            <div class="bottom">
+                <span class="date">
+                    9 oct 2023
+                </span>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+        </li>
+        <li class="note">
+            <div class="content">
+                <p class="title">
+                    Your Title
+                </p>
+                <span class="details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis ducimus, deserunt odit
+                </span>
+            </div>
+            <div class="bottom">
+                <span class="date">
+                    9 oct 2023
+                </span>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+        </li>
+        <li class="note">
+            <div class="content">
+                <p class="title">
+                    Your Title
+                </p>
+                <span class="details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis ducimus, deserunt odit
+                </span>
+            </div>
+            <div class="bottom">
+                <span class="date">
+                    9 oct 2023
+                </span>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+        </li>
+        <li class="note">
+            <div class="content">
+                <p class="title">
+                    Your Title
+                </p>
+                <span class="details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis ducimus, deserunt odit
+                </span>
+            </div>
+            <div class="bottom">
+                <span class="date">
+                    9 oct 2023
+                </span>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+        </li>
+        <li class="note">
+            <div class="content">
+                <p class="title">
+                    Your Title
+                </p>
+                <span class="details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis ducimus, deserunt odit
+                </span>
+            </div>
+            <div class="bottom">
+                <span class="date">
+                    9 oct 2023
+                </span>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+        </li>
+        <li class="note">
+            <div class="content">
+                <p class="title">
+                    Your Title
+                </p>
+                <span class="details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis ducimus, deserunt odit
+                </span>
+            </div>
+            <div class="bottom">
+                <span class="date">
+                    9 oct 2023
+                </span>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+        </li>
+        <li class="note">
+            <div class="content">
+                <p class="title">
+                    Your Title
+                </p>
+                <span class="details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis ducimus, deserunt odit
+                </span>
+            </div>
+            <div class="bottom">
+                <span class="date">
+                    9 oct 2023
+                </span>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+        </li>
+        <li class="note">
+            <div class="content">
+                <p class="title">
+                    Your Title
+                </p>
+                <span class="details">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis ducimus, deserunt odit
+                </span>
+            </div>
+            <div class="bottom">
+                <span class="date">
+                    9 oct 2023
+                </span>
+                <div class="settings">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div>
+        </li> -->
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

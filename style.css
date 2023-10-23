@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgb(173, 84, 252);
+}
+.container{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 265px);
+    gap: 15px;
+}
+.container li:not(.edit-icons){
+    list-style-type: none;
+    height: 250px;
+    background: white;
+    padding: 15px 20px 20px;
+    border-radius: 5px;
+}
+#add-box, .addnote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+}
+#add-box .addnote{
+    width: 70px;
+    height: 70px;
+    border: 2px dashed rgb(173, 84, 252);
+    border-radius: 50%;
+    font-size: 1.8rem;
+    color: rgb(173, 84, 252);
+}
+#add-box p{
+    font-size: 20px;
+    color: rgb(173, 84, 252);
+    letter-spacing: 1.3px;
+}
+.note{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.note p{
+    font-size: 22px;
+    font-weight: 500;
+}
+.note span{
+    color: rgb(86, 86, 86);
+    font-size: 16px;
+    margin-top: 5px;
+    display: block;
+}
+.note .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgb(200, 200, 200);
+    padding-top: 10px;
+    position: relative;
+}
+.note .bottom span{
+    color: rgb(143, 142, 142);
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.bottom .settings i{
+    color: rgb(143, 142, 142);
+    font-size: 15px;
+    cursor: pointer;
+}
+.bottom .settings .menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -5.2rem;
+    right: 1rem;
+    background: #f5f5f5;
+    gap: 10px;
+    z-index: 999;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: none;
+    transition: transform 0.1s ease;
+    transform-origin: bottom right;
+}
+.settings .menu li{
+    padding: 8px 15px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: rgb(116, 116, 116);
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 2px;
+}
+.bottom .settings.show .menu{
+    display: block;
+}
+.settings .menu li:hover{
+    background: white;
+}
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 3;
+    display: none;
+}
+.popup .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 4px;
+    width: 400px;
+}
+.content header{
+    padding: 15px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid rgb(192, 192, 192);
+}
+header p{
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+header i{
+    font-size: 25px;
+    color: rgb(130, 130, 130);
+    cursor: pointer;
+}
+header i:hover{
+    color: red;
+}
+.content form{
+    padding: 25px;
+}
+label{
+    display: block;
+    margin-bottom: 7px;
+    font-size: 19px;
+    letter-spacing: 1.3px;
+}
+.row{
+    margin-bottom: 20px;
+}
+form :where(textarea,input){
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid rgb(130, 130, 130);
+}
+.description textarea{
+    resize: none;
+    height: 150px;
+}
+button{
+    width: 100%;
+    font-size: 18px;
+    padding: 8px 0;
+    letter-spacing: 1.2px;
+    background: none;
+    border: none;
+    background: rgb(173, 84, 252);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
